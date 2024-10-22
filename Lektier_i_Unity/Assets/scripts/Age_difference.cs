@@ -28,13 +28,14 @@ public class Age_difference : MonoBehaviour
         // Calculate age after additional years
         short resultYearsToAdd = Add(age, yearsToAdd);
         Debug.Log("After " + yearsToAdd + " years, age will be: " + resultYearsToAdd);
+        // Method to get age after adding years
+        
+       
+    
     }
 
-    // Method to get age after adding years
-    short Add(short currentAge, short yearsToAdd)
-    {
-        return (short)(currentAge + yearsToAdd);  // Return the updated age (cast til short)
-    }
+    short Add(short currentAge, short yearsToAdd) => (short)(currentAge + yearsToAdd);  // Return the updated age 
+
 
     // Update is called once per frame
     void Update()
@@ -49,5 +50,6 @@ public class Age_difference : MonoBehaviour
         {
             Debug.Log("Age now 100, " + name + " is dead."); // Tilføjet mellemrum og bedre besked
         }
+        short Add(short currentAge, short yearsToAdd) => (short)(currentAge + yearsToAdd);  // Return the updated age 
     }
 }
